@@ -214,10 +214,7 @@ namespace solver {
         std::complex<double> b = x.get_b();
         std::complex<double> c = x.get_c();
         if (a.real()==16.0 && c.real() == 1.0){
-            if (xrz)
                 throw std::invalid_argument("ERRERP x/0");
-            xrz = true;
-            throw std::invalid_argument("ERRERP x/0");
         }
         complex<double> ans = 0.0;
 
