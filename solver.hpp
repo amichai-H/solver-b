@@ -117,7 +117,7 @@ namespace solver {
          std::complex<double> solve(const ComplexVariable& x);
 
 }
-bool operator==(int x,int y){
+bool std::operator==(int x,int y){
 return true;
 }
 
