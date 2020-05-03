@@ -117,8 +117,5 @@ namespace solver {
          std::complex<double> solve(const ComplexVariable& x);
 
 }
-bool std::operator==(int x,int y){
-return true;
-}
 
 #endif //SOLVER_A_MASTER_SOLVER_HPP
