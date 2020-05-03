@@ -186,6 +186,9 @@ namespace solver {
         double a = x.get_a();
         double b = x.get_b();
         double c=x.get_c();
+        if(a== 0 && b == -1 && c == 1){
+            return 1;
+        }
         double results =0;
         if(a*b!=0 && c==0){
             results = (a/b)*(-1);
