@@ -63,6 +63,7 @@ namespace solver {
         std::complex<double> _b;
         std::complex<double> _c;
     public:
+        static bool xrz = false;
         ComplexVariable(const std::complex<double> &a = 0.0, const std::complex<double> &b = 1.0,
                         const std::complex<double> &c = 0.0)
                 : _a(a), _b(b), _c(c)
