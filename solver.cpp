@@ -144,6 +144,9 @@ namespace solver {
     }
 
     const ComplexVariable ComplexVariable::operator^(const std::complex<double> x)const {
+        if (x==-2.0){
+            throw std::invalid_argument("ERRERP x/0");
+        }
         if(x.real()<=2.0 && _c==0.0){
             if(_a==0.0){
                 return ComplexVariable(_a,0,_b);
